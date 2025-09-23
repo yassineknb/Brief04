@@ -1,11 +1,10 @@
 import "./App.css"
-import Categories from "./Accueil/Categories"
-import Artsan from "./Accueil/Artsan"
+import Accueil from "./Accueil/Accueil"
 function App() {
 
   return (
     <div>
-      <Artsan/>
+      <Accueil/>
     </div>
 
   )
