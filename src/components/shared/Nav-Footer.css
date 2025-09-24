@@ -1,0 +1,139 @@
+/* src/components/shared/Nav-Footer.css */
+/* Les @import ont été déplacés dans index.html pour de meilleures performances */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Itim', sans-serif;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo, .logo1, .logo2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.logo { color: #D4AF37; }
+.logo1 { color: #B8860B; margin: 0 5px; }
+.logo2 { color: black; }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
+}
+
+.nav-links .page {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links .page:hover {
+    color: #D4AF37;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    text-align: center;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+/* --- Footer Styles --- */
+.container2 {
+  background-color: #9F715E;
+  color: #fff9ec;
+  padding: 40px 0 20px 0;
+  margin-top: auto; /* Pour le coller en bas */
+  font-family: 'Itim', sans-serif;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  color: #fff9ec;
+  border-bottom: 2px solid #fff9ec;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li .a {
+  color: #fff9ec;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li .a:hover {
+  color: #ffebc1;
+}
+
+.icons-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icons-media i {
+    width: 20px;
+}
+
+.icons-media p {
+  margin: 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #7a5748;
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: #ffebc1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}

@@ -1,6 +1,85 @@
 {
-  "oeuvres": [],
-  "categories": [],
-  "artisans": [],
-  "evenements": []
+  "evenements": [
+    {
+      "id": 1,
+      "titre": "Festival Marrakech des Arts Populaires (FNAP)",
+      "lieu": "Palais El Badii, Marrakech",
+      "date": "3 au 7 juillet 2025",
+      "image": "/images/events/image01.jpg"
+    },
+    {
+      "id": 2,
+      "titre": "Symposium International d’Art Contemporain",
+      "lieu": "Villa - Tanger",
+      "date": "24 mai au 30 septembre 2025",
+      "image": "/images/events/maroc.jpg"
+    },
+    {
+      "id": 3,
+      "titre": "Dar el Bacha Musée des Confluences",
+      "lieu": "Musée Dar el Bacha, Marrakech",
+      "date": "Jusqu’au 30 septembre 2025",
+      "image": "/images/events/darbadha.jpg"
+    },
+    {
+      "id": 4,
+      "titre": "Exposition « The Golden Brush »",
+      "lieu": "Théâtre National Mohammed V, Rabat",
+      "date": "1er au 4 octobre 2025",
+      "image": "/images/events/mesrah.jpg"
+    }
+  ],
+  "categories": [
+    { "id": 1, "nom": "Artisanat" },
+    { "id": 2, "nom": "Gastronomie" },
+    { "id": 3, "nom": "Habits" },
+    { "id": 4, "nom": "Architecture" },
+    { "id": 5, "nom": "Musique & Danse" }
+  ],
+  "oeuvres": [
+    {
+      "id": 1,
+      "titre": "Tapis Amazigh",
+      "category": "Artisanat",
+      "lieu": "Marrakesh",
+      "image": "/images/oeuvres/tapis.jpg"
+    },
+    {
+      "id": 2,
+      "titre": "Zellige Marocain",
+      "category": "Architecture",
+      "lieu": "Fès",
+      "image": "/images/oeuvres/zellig.jpg"
+    },
+    {
+      "id": 3,
+      "titre": "Gnawa Musique",
+      "category": "Musique",
+      "lieu": "Essaouira et Marrakech",
+      "image": "/images/oeuvres/chti7.jpg"
+    },
+    {
+      "id": 4,
+      "titre": "Riad Marocain",
+      "category": "Architecture",
+      "lieu": "Marrakech et Fès",
+      "image": "/images/oeuvres/riad.jpg"
+    },
+    {
+      "id": 5,
+      "titre": "La dance Ahwach",
+      "category": "Danse",
+      "lieu": "Ouarzazate",
+      "image": "/images/oeuvres/ahwach.jpg"
+    }
+  ],
+  "artisans": [
+    {
+      "id": 1,
+      "nom": "Bouchra Boudoua",
+      "titre": "La Mémoire de la Terre Réinventée",
+      "description": "Ce mois-ci, nous mettons en lumière Bouchra Boudoua, une céramiste et designer qui façonne bien plus que de l'argile : elle tisse un dialogue entre le passé et le présent, entre les techniques ancestrales marocaines et une esthétique résolument moderne. Basée entre Casablanca et Marrakech, elle est une figure incontournable de la scène du design marocain.",
+      "image": "/images/artisans/Bouchra.jpg"
+    }
+  ]
 }
