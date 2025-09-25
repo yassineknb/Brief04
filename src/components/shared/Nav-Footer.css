@@ -137,3 +137,54 @@
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+.hamburger {
+  display: none; /* Caché par défaut sur les grands écrans */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* -- Media Query : Styles pour les écrans de 768px ou moins -- */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between; /* Pour espacer le logo et le hamburger */
+    padding: 20px;
+  }
+
+  .nav-links {
+    /* Style du menu déroulant */
+    position: absolute;
+    top: 80px; /* Hauteur de la navbar */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    /* Le menu est caché par défaut */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+
+  .nav-links.active {
+    /* Quand le menu est actif, on lui donne une hauteur */
+    max-height: 300px; /* Ajustez si vous avez plus de liens */
+    padding: 1rem 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  .searchbar {
+    display: none; /* On cache la barre de recherche sur mobile pour plus de place */
+  }
+
+  .hamburger {
+    display: block; /* On affiche le bouton hamburger */
+  }
+}
