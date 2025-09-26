@@ -1,14 +1,15 @@
-// src/App.jsx
-
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Import des composants partagés
 import Navbar from './components/shared/Navbar.jsx';
 import Footer from './components/shared/Footer.jsx';
-
-// Import de votre page d'accueil
 import Accueil from './pages/Accueil.jsx';
+import Apropos from './pages/Apropos.jsx';
+import FavorisPage from './pages/FavorisPage.jsx';
+
+// --- NOUVEAUX IMPORTS ---
+import SearchResultsPage from './pages/SearchResultsPage.jsx';
+import DetailsPage from './pages/DetailsPage.jsx';
 
 function App() {
   return (
@@ -17,12 +18,14 @@ function App() {
         <Navbar />
         <main style={{ flex: 1 }}>
           <Routes>
-            {/* La route pour votre page d'accueil */}
             <Route path="/" element={<Accueil />} />
+            <Route path="/a-propos" element={<Apropos />} />
+            <Route path="/favoris" element={<FavorisPage />} />
 
-            {/* Vous pourrez ajouter les autres routes ici plus tard */}
-            {/* <Route path="/a-propos" element={<AboutPage />} /> */}
-            {/* <Route path="/favoris" element={<FavoritesPage />} /> */}
+            {/* --- NOUVELLES ROUTES --- */}
+            <Route path="/recherche" element={<SearchResultsPage />} />
+            {/* Route dynamique : :type peut être 'oeuvre' or 'evenement', :id est le numéro */}
+            <Route path="/details/:type/:id" element={<DetailsPage />} />
           </Routes>
         </main>
         <Footer />

@@ -1,6 +1,8 @@
 // src/components/accueil/Categories.jsx
 
 import React, { useState, useEffect } from 'react';
+// 1. IMPORTER LE COMPOSANT Link POUR LA NAVIGATION
+import { Link } from 'react-router-dom';
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
@@ -13,20 +15,29 @@ const Categories = () => {
   }, []);
 
   return (
-    // -- MODIFICATIONS ICI --
-    // Fond blanc et espacement vertical pour créer la séparation visuelle.
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <h2 className="text-4xl font-serif text-center text-gray-800 mb-12">
           CATÉGORIES
         </h2>
         <div className="flex justify-center flex-wrap gap-4 md:gap-6">
+          
+          {/* 2. TRANSFORMER CHAQUE BOUTON EN LIEN */}
           {categories.map(category => (
-            // Style des boutons conforme au design
-            <button key={category.id} className="bg-card-bg text-gray-800 font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity">
-              {category.nom}
-            </button>
+            // Chaque bouton est maintenant enveloppé dans un lien
+            <Link
+              key={category.id}
+              // 3. CONSTRUIRE L'URL DE RECHERCHE DYNAMIQUEMENT
+              // On envoie l'utilisateur vers la page de recherche avec le bon paramètre de catégorie.
+              // encodeURIComponent est crucial pour que "Musique & Danse" fonctionne correctement.
+              to={`/recherche?category=${encodeURIComponent(category.nom)}`}
+            >
+              <button className="bg-card-bg text-gray-800 font-medium px-8 py-3 rounded-lg hover:opacity-90 transition-opacity w-full">
+                {category.nom}
+              </button>
+            </Link>
           ))}
+
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 // src/components/accueil/Evenements.jsx
 
 import React, { useState, useEffect } from 'react';
-import EventCard from './EventCard.jsx';
+import EventCard from '../accueil/EventCard.jsx';
 
 const Evenements = () => {
   const [evenements, setEvenements] = useState([]);
