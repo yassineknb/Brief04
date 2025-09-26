@@ -1,10 +1,16 @@
 import "./App.css"
-import Accueil from "./Accueil/Accueil"
+
+import Navbar from "./Navbar-Footer/Navbar"
+import Publier from "./Publier/Publier"
+import Admin from "./admin/Admin"
 function App() {
 
   return (
     <div>
-      <Accueil/>
+      <Navbar/>
+      {/* <Publier/> */}
+      <Admin/>
+
     </div>
 
   )

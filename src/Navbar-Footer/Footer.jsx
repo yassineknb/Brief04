@@ -17,7 +17,7 @@ export default function Footer() {
                     <div className='icons-media'><i class="fab fa-instagram"></i><p>Instagram</p></div>
                     </div>
                 </div>
-                 <div class="footer-section">
+                 <div className="footer-section">
                     <h3>Liens rapides</h3>
                     <ul>
                         <li><Link to="/" className='a'>Accueil</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
                         <li><Link to="/"className='a'>Admin</Link></li>
                     </ul>
                 </div>
-                 <div class="footer-section">
+                 <div className="footer-section">
                     <h3>Support</h3>
                     <ul>
                         <li><Link to="/" className='a'>Centre d'aide</Link></li>
@@ -36,7 +36,7 @@ export default function Footer() {
                         <li><Link to="/" className='a'>Signaler un problème</Link></li>
                     </ul>
                 </div>
-                 <div class="footer-section">
+                 <div className="footer-section">
                     <h3>Informations de contact</h3>
                     <div className='icons-media'><i class="fas fa-map-marker-alt"></i>
                     <p>Boulevard Abderrahim, Casablanca.</p></div>
@@ -44,12 +44,9 @@ export default function Footer() {
                     <p>+212 650678910</p></div>
                     <div className='icons-media'><i class="fas fa-envelope"></i>
                              <p>info@artconnect.com</p></div>
-                    
-                    
-           
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div className="footer-bottom">
           <p>
         &copy; 2025 ARTCONNECT & MAROC. All rights reserved. | <Link to="#">Privacy Policy</Link> |
             <Link to="#">Terms of Service</Link>

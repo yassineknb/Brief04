@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+    
+.page-background {
+  background-color: #D0AFA3; 
+  padding: 40px 20px;
+  font-family: 'itim', serif; 
+  color: #55433b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.form-container {
+  background-color: #fdfaf6;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.form-container h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  color: #55433b;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.form-container .subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8a7a70;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1c7bc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: 'itim', serif; 
+  color: #55433b;
+  box-sizing: border-box; 
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.7rem center;
+  background-repeat: no-repeat;
+  background-size: 1.25em;
+  padding-right: 2.5rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+.form-row .form-group {
+  flex: 1;
+}
+
+
+.file-uploader {
+  border: 2px dashed #d1c7bc;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fdfaf6;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.file-uploader:hover {
+  background-color: #f8f3ed;
+  border-color: #c7a159;
+}
+
+.file-uploader-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #8a7a70;
+  font-weight: bold;
+}
+
+.file-uploader-label span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #c7a159; 
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+font-family: 'itim', serif; 
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #b38f4d;
+}
+
+.tips-container {
+  background-color: #fff9e9; /* Light yellow background */
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 743px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.tips-container h4 {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tips-container ul {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.tips-container li {
+  margin-bottom: 5px;
+}

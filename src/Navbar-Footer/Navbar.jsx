@@ -13,7 +13,7 @@ function Navbar () {
         <ul className="nav-links">
           <li><Link to="/" className='page'>Accueil</Link></li>
           <li><Link to="/" className='page'>À Propos</Link></li>
-          <li><Link to="/" className='page'>Panier</Link></li>
+          <li><Link to="/" className='page'>Publier</Link></li>
           <li><Link to="/" className='page'>Favoris</Link></li>
           <li><Link to="/" className='page'>Admin</Link></li>
         </ul>
