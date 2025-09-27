@@ -1,0 +1,309 @@
+/* src/components/admin/Dashboard.css */
+
+/* --- STYLES GÉNÉRAUX DU TABLEAU DE BORD --- */
+.dashboard-admin {
+  padding: 20px;
+  background-color: #DDC6BC; /* Fond principal de la page admin */
+  color: #4B3B34;
+  min-height: calc(100vh - 80px); /* Prend toute la hauteur moins la navbar */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/* --- SYSTÈME D'ONGLETS --- */
+.tabs-container {
+  max-width: fit-content;
+  margin: 0 auto 30px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tabs button.active {
+  background: #C5A46D;
+  color: #4B3B34;
+  font-weight: 600;
+}
+
+/* --- CONTENU DES ONGLETS --- */
+.content {
+  background: #C1A093;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.content h3 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* --- FORMULAIRES D'AJOUT COMPLEXES (OEUVRES) --- */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.filters input,
+.filters select,
+.filters textarea {
+  padding: 12px;
+  border: 1px solid #D0AFA3;
+  border-radius: 8px;
+  background: #D0AFA3;
+  color: #4B3B34;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filters input::placeholder,
+.filters textarea::placeholder {
+  color: #6B4B3E;
+}
+
+/* --- CARTES DE VISUALISATION (OEUVRES, ÉVÉNEMENTS) --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.card-body p {
+  margin: 0;
+  font-size: 14px;
+  color: #6B4B3E;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.edit, .delete {
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+.edit:hover, .delete:hover {
+  opacity: 0.8;
+}
+
+.edit {
+  background: #EAE0D5;
+  color: #4B3B34;
+}
+
+.delete {
+  background: #DDC6BC;
+  color: #4B3B34;
+}
+
+/* --- FORMULAIRE D'ÉDITION EN LIGNE (OEUVRES) --- */
+.card-form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-form input,
+.card-form textarea,
+.card-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.card-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-actions button {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn { background-color: #A2674C; color: white; }
+.cancel-btn { background-color: #EAE0D5; color: #4B3B34; }
+
+/* --- GESTIONNAIRES SIMPLES (CATÉGORIES, ARTISANS) --- */
+.simple-manager {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.simple-add-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.simple-add-form input {
+  flex: 1;
+  min-width: 180px;
+  padding: 12px;
+  border: 1px solid #D0AFA3;
+  border-radius: 8px;
+  background: #D0AFA3;
+  color: #4B3B34;
+  font-size: 14px;
+}
+
+.simple-add-form input::placeholder {
+  color: #6B4B3E;
+}
+
+.simple-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simple-list li {
+  background-color: #EAE0D5;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.simple-list li span {
+  font-weight: 500;
+  word-break: break-word;
+}
+
+/* --- BOUTONS --- */
+.add-btn {
+    background: #A2674C;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px;
+    transition: opacity 0.2s;
+}
+.add-btn:hover {
+  opacity: 0.9;
+}
+.add-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* --- CHAMP DE TÉLÉVERSEMENT DE FICHIER PERSONNALISÉ --- */
+.file-input-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  background: #D0AFA3;
+  border: 1px solid #c7a159;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  color: #4B3B34;
+  text-align: center;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.file-input-wrapper input[type=file] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.featured-badge { background-color: #D4AF37; color: white; padding: 2px 8px; font-size: 10px; font-weight: bold; position: absolute; top: 10px; right: 10px; border-radius: 4px; }
+.card .description { font-size: 12px; margin-top: 10px; flex-grow: 1; color: #6B4B3E; }
+.feature-btn { background-color: #C5A46D; color: #4B3B34; border: none; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-weight: 500; }

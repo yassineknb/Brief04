@@ -18,14 +18,14 @@ function Navbar() {
 
       {/* --- MODIFICATION 1 : AJOUT DE CLASSES POUR LE RESPONSIVE --- */}
       {/* La classe 'active' sera ajoutée dynamiquement quand le menu est ouvert */}
-      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><Link to="/" className='page' onClick={() => setIsMenuOpen(false)}>Accueil</Link></li>
         <li><Link to="/a-propos" className='page' onClick={() => setIsMenuOpen(false)}>À Propos</Link></li>
         <li><Link to="/publier" className='page' onClick={() => setIsMenuOpen(false)}>Publier</Link></li>
         <li><Link to="/favoris" className='page' onClick={() => setIsMenuOpen(false)}>Favoris</Link></li>
+        {/* --- CORRECTION ICI : ASSUREZ-VOUS QU'IL N'Y A QU'UNE SEULE LIGNE POUR ADMIN --- */}
         <li><Link to="/admin" className='page' onClick={() => setIsMenuOpen(false)}>Admin</Link></li>
       </ul>
-
       {/* La barre de recherche reste la même */}
       <div className='searchbar'>
         <input

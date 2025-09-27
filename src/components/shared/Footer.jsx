@@ -1,7 +1,7 @@
 // src/components/shared/Footer.jsx
 
 import React from 'react';
-import "./Nav-Footer.css"; // On importe le même CSS
+import "./Nav-Footer.css";
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -24,6 +24,7 @@ export default function Footer() {
                     <li><Link to="/a-propos" className='a'>A propos</Link></li>
                     <li><Link to="/publier" className='a'>Publier</Link></li>
                     <li><Link to="/favoris" className='a'>Favoris</Link></li>
+                    {/* --- CORRECTION ICI --- */}
                     <li><Link to="/admin" className='a'>Admin</Link></li>
                 </ul>
             </div>
@@ -32,7 +33,7 @@ export default function Footer() {
                 <ul>
                     <li><Link to="/" className='a'>Centre d'aide</Link></li>
                     <li><Link to="/" className='a'>Guide utilisateur</Link></li>
-                    <li><Link to="/"className='a'>Contacter le support</Link></li>
+                    <li><Link to="/" className='a'>Contacter le support</Link></li>
                     <li><Link to="/" className='a'>Signaler un problème</Link></li>
                 </ul>
             </div>
