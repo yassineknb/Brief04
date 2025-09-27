@@ -1,6 +1,247 @@
 {
-  "oeuvres": [],
-  "categories": [],
-  "artisans": [],
-  "evenements": []
+  "evenements": [
+    {
+      "id": "1",
+      "titre": "Festival Marrakech des Arts Populaires (FNAP)",
+      "lieu": "Palais El Badii, Marrakech",
+      "date": "3 au 7 juillet 2025",
+      "image": "/images/events/image01.jpg",
+      "description": "Un événement annuel célébrant la richesse des arts traditionnels marocains, incluant musique, danse, et chants de toutes les régions du Royaume."
+    },
+    {
+      "id": "2",
+      "titre": "Symposium International d’Art Contemporain",
+      "lieu": "Villa - Tanger",
+      "date": "24 mai au 30 septembre 2025",
+      "image": "/images/events/maroc.jpg",
+      "description": "Une rencontre d'artistes marocains et internationaux qui exposent leurs dernières créations, offrant un dialogue entre l'art moderne et les influences culturelles locales."
+    },
+    {
+      "id": "3",
+      "titre": "Dar el Bacha Musée des Confluences",
+      "lieu": "Musée Dar el Bacha, Marrakech",
+      "date": "Jusqu’au 30 septembre 2025",
+      "image": "/images/events/darbadha.jpg",
+      "description": "Explorez les expositions uniques de ce musée historique qui mettent en lumière les confluences des différentes cultures ayant façonné le Maroc."
+    },
+    {
+      "id": "4",
+      "titre": "Exposition « The Golden Brush »",
+      "lieu": "Théâtre National Mohammed V, Rabat",
+      "date": "1er au 4 octobre 2025",
+      "image": "/images/events/mesrah.jpg",
+      "description": "Une exposition prestigieuse présentant les œuvres de calligraphes et de peintres renommés, célébrant l'élégance de l'art de l'écriture et de la peinture marocaine."
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "nom": "Artisanat"
+    },
+    {
+      "id": "2",
+      "nom": "Gastronomie"
+    },
+    {
+      "id": "3",
+      "nom": "Habits"
+    },
+    {
+      "id": "4",
+      "nom": "Architecture"
+    },
+    {
+      "id": "5",
+      "nom": "Musique & Danse"
+    },
+    {
+      "id": "6",
+      "nom": "Musique"
+    },
+    {
+      "id": "7",
+      "nom": "Danse"
+    }
+  ],
+  "oeuvres": [
+    {
+      "id": "1",
+      "titre": "Tapis Amazigh",
+      "category": "Artisanat",
+      "lieu": "Marrakesh",
+      "image": "/images/oeuvres/tapis.jpg",
+      "description": "Tissé à la main par les tribus berbères de l'Atlas, chaque tapis raconte une histoire unique à travers ses motifs géométriques et ses couleurs vibrantes."
+    },
+    {
+      "id": "2",
+      "titre": "Zellige Marocain",
+      "category": "Architecture",
+      "lieu": "Fès",
+      "image": "/images/oeuvres/zellig.jpg",
+      "description": "Le zellige est un art de la mosaïque où des carreaux d'argile émaillée sont taillés à la main pour créer des motifs complexes qui ornent les murs, les sols et les fontaines."
+    },
+    {
+      "id": "3",
+      "titre": "Gnawa Musique",
+      "category": "Musique",
+      "lieu": "Essaouira et Marrakech",
+      "image": "/images/oeuvres/chti7.jpg",
+      "description": "Musique spirituelle des descendants d'esclaves d'Afrique subsaharienne, caractérisée par le son hypnotique du guembri et des castagnettes en métal (krakebs)."
+    },
+    {
+      "id": "4",
+      "titre": "Riad Marocain",
+      "category": "Architecture",
+      "lieu": "Marrakech et Fès",
+      "image": "/images/oeuvres/riad.jpg",
+      "description": "Maison traditionnelle organisée autour d'un patio central avec une fontaine. Les riads sont un havre de paix, alliant architecture islamique et artisanat marocain."
+    },
+    {
+      "id": "5",
+      "titre": "La dance Ahwach",
+      "category": "Danse",
+      "lieu": "Ouarzazate",
+      "image": "/images/oeuvres/ahwach.jpg",
+      "description": "Danse collective des communautés berbères du sud du Maroc, où hommes et femmes forment deux lignes face à face, chantant et dansant au rythme des percussions."
+    },
+    {
+      "id": "fdc0",
+      "titre": "cool",
+      "category": "Artisanat",
+      "lieu": "Marrakech-Safi",
+      "artiste": "afaf",
+      "description": "grrfgrgrgrgrrgrgrgrfgrfhrh",
+      "image": "https://res.cloudinary.com/dpfoy4wb4/image/upload/v1759004616/brqric42uwo3copbg5tg.jpg"
+    }
+  ],
+  "artisans": [
+    {
+      "id": "1",
+      "nom": "Bouchra Boudoua",
+      "specialite": "Céramiste & Designer",
+      "region": "Casablanca & Marrakech",
+      "image": "/images/artisans/Bouchra.jpg",
+      "description": "Une céramiste qui tisse un dialogue entre le passé et le présent, entre les techniques ancestrales marocaines et une esthétique résolument moderne.",
+      "featured": false
+    },
+    {
+      "id": "2",
+      "nom": "Artisan Anonyme",
+      "specialite": "Tanneur",
+      "region": "Fès",
+      "image": "/images/oeuvres/tapis.jpg",
+      "description": "Maître dans l'art du cuir, cet artisan perpétue les techniques séculaires de la tannerie de Fès pour créer des objets d'une qualité exceptionnelle.",
+      "featured": true
+    }
+  ],
+  "apropos": {
+    "mission": {
+      "titre": "Notre Mission",
+      "description": "Promouvoir, préserver et partager la richesse extraordinaire du patrimoine culturel et artistique marocain",
+      "features": [
+        {
+          "id": 1,
+          "titre": "PATRIMOINE",
+          "icon": "building"
+        },
+        {
+          "id": 2,
+          "titre": "CULTURE",
+          "icon": "book"
+        },
+        {
+          "id": 3,
+          "titre": "TRADITION",
+          "icon": "diamond"
+        },
+        {
+          "id": 4,
+          "titre": "INNOVATION",
+          "icon": "lightbulb"
+        }
+      ]
+    },
+    "stats": [
+      {
+        "id": 1,
+        "valeur": "200+",
+        "label": "Traditions référencées"
+      },
+      {
+        "id": 2,
+        "valeur": "16",
+        "label": "Régions couvertes"
+      },
+      {
+        "id": 3,
+        "valeur": "50+",
+        "label": "Artisans partenaires"
+      },
+      {
+        "id": 4,
+        "valeur": "1",
+        "label": "Années d'expérience"
+      }
+    ],
+    "quiSommesNous": {
+      "titre": "Qui sommes-nous ?",
+      "paragraphe1": "ArtConnect Maroc est née de la volonté de créer un pont digital entre le patrimoine culturel ancestral du Maroc et les générations actuelles. Nous croyons fermement que l'art et la culture sont des vecteurs essentiels de cohésion sociale et d'identité nationale.",
+      "paragraphe2": "Notre plateforme permet aux artisans, artistes, et passionnés de culture de partager leurs créations, leurs savoir-faire et leurs histoires, créant ainsi une communauté vivante autour de nos traditions."
+    },
+    "valeurs": {
+      "titre": "Nos Valeurs",
+      "items": [
+        {
+          "id": 1,
+          "titre": "Passion culturelle",
+          "description": "Nous sommes passionnés par la richesse et la diversité du patrimoine marocain",
+          "icon": "heart"
+        },
+        {
+          "id": 2,
+          "titre": "Qualité",
+          "description": "Nous nous engageons à présenter un contenu authentique et de qualité",
+          "icon": "badge"
+        },
+        {
+          "id": 3,
+          "titre": "Communauté",
+          "description": "Nous créons un espace de partage et d'échange entre artisans et amateurs d'art",
+          "icon": "users"
+        },
+        {
+          "id": 4,
+          "titre": "Rayonnement",
+          "description": "Nous voulons faire connaître l'art marocain au niveau national et international",
+          "icon": "globe"
+        }
+      ]
+    },
+    "vision": {
+      "titre": "Notre Vision",
+      "description": "Devenir la référence digitale du patrimoine culturel marocain, en créant un écosystème où tradition et modernité se rencontrent pour valoriser notre héritage artistique."
+    },
+    "parcours": {
+      "titre": "Notre Parcours",
+      "etapes": [
+        {
+          "id": 1,
+          "annee": "2026",
+          "titre": "Lancement d'ArtConnect Maroc",
+          "description": "Création de la plateforme pour valoriser le patrimoine culturel marocain"
+        },
+        {
+          "id": 2,
+          "annee": "2025",
+          "titre": "Expansion nationale",
+          "description": "Couverture des 16 régions du Maroc avec plus de 200 traditions"
+        }
+      ]
+    },
+    "cta": {
+      "titre": "Rejoignez Notre Communauté",
+      "description": "Contribuez à la préservation et à la promotion du patrimoine culturel marocain. Partagez vos créations, découvrez des traditions et connectez-vous avec des artisans passionnés.",
+      "bouton": "PUBLIER UNE ŒUVRE"
+    }
+  }
 }
